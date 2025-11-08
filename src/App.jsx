@@ -11,10 +11,11 @@ import UserDashboard from './pages/user/UserDashboard'
 import AdminDashboard from './pages/admin/AdminDashboard'
 import AddProductPage from './pages/admin/AddProductPage'
 import UpdateProductPage from './pages/admin/UpdateProductPage'
+import MyState from './context/MyState'
 
 const App = () => {
   return (
-    <div >
+    <MyState> 
       <BrowserRouter>
       <ScrollTop/>
         <Routes>
@@ -31,7 +32,7 @@ const App = () => {
         </Routes>
       
       </BrowserRouter>
-    </div>
+    </MyState>
   )
 }
 
