@@ -10,11 +10,7 @@ const ProductDetail = () => {
   const context = useContext(myContext);
   const { loading, setLoading, getAllProduct, getAllProductFunction } = context;
   // console.log(getAllProduct)
-
-  
   const navigate = useNavigate();
-
-  
   const deleteProduct = async (id) => {
     setLoading(true);
     try {
@@ -39,13 +35,9 @@ const ProductDetail = () => {
           </button>
         </Link>
       </div>
-
-      
       <div className="flex justify-center relative top-20">
         {loading && <Loader />}
       </div>
-
-      
       <div className="w-full overflow-x-auto mb-5">
         <table className="w-full text-left border border-collapse sm:border-separate border-pink-100 text-pink-400">
           <tbody>

@@ -35,14 +35,14 @@ const AllProduct = () => {
   return (
     <Layout>
       <div className="py-8">
-        {/* Heading  */}
+       
         <div className="">
           <h1 className=" text-center mb-5 text-2xl font-semibold">
             All Products
           </h1>
         </div>
 
-        {/* main  */}
+        
         <section className="text-gray-600 body-font">
           <div className="container px-5 lg:px-0 py-5 mx-auto">
             <div className="flex justify-center">{loading && <Loader />}</div>
@@ -60,7 +60,7 @@ const AllProduct = () => {
                       />
                       <div className="p-6">
                         <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
-                          E-bharat
+                          Your-BaaZaar
                         </h2>
                         <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                           {title.substring(0, 25)}

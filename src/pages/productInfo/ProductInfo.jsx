@@ -12,14 +12,8 @@ import toast from "react-hot-toast";
 const ProductInfo = () => {
   const context = useContext(myContext);
   const { loading, setLoading } = context;
-
   const [product, setProduct] = useState("");
-  
-
   const { id } = useParams();
-
-  
-
   const getProductData = async () => {
     setLoading(true);
     try {
