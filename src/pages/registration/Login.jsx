@@ -72,11 +72,11 @@ const Login = () => {
       )}
 
       <div className="w-full max-w-4xl bg-white dark:bg-gray-900 rounded-2xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
-        {/* Left - Branding / Illustration */}
+        
         <div className="hidden md:flex flex-col items-center justify-center p-8 bg-purple-600">
           <div className="flex items-center space-x-3 mb-4">
             <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
-              {/* simple icon */}
+              
               <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l9-4 9 4M3 7h18" />
               </svg>
@@ -97,7 +97,7 @@ const Login = () => {
           </div>
         </div>
 
-        {/* Right - Form */}
+        
         <div className="p-8 md:p-10">
           <div className="flex items-center justify-between mb-6">
             <div>
@@ -121,7 +121,7 @@ const Login = () => {
                     email: e.target.value,
                   });
                 }}
-                className="mt-2 block w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 placeholder-gray-400 focus:ring-2 focus:ring-pink-300 outline-none"
+                className="text-white mt-2 block w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 placeholder-gray-400 focus:ring-2 focus:ring-pink-300 outline-none"
               />
             </label>
 
@@ -140,7 +140,7 @@ const Login = () => {
                     password: e.target.value,
                   });
                 }}
-                className="mt-2 block w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 placeholder-gray-400 focus:ring-2 focus:ring-pink-300 outline-none"
+                className="text-white mt-2 block w-full px-4 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 placeholder-gray-400 focus:ring-2 focus:ring-pink-300 outline-none"
               />
             </label>
 
@@ -166,7 +166,6 @@ const Login = () => {
             </div>
           </div>
 
-          {/* small-screen signup link */}
           <div className="mt-6 md:hidden text-center">
             <span className="text-sm text-gray-500">New here? </span>
             <Link to="/signup" className="text-sm font-medium text-pink-600 hover:underline">
