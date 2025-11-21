@@ -8,7 +8,7 @@ const Track = () => {
           <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
             <div className="border-2 hover:shadow-xl hover:shadow-gray-200 border-gray-200 bg-gray-100 shadow-[inset_0_0_2px_rgba(0,0,0,0.6)] px-4 py-6 rounded-lg">
               <svg
-                className="text-pink-600 w-12 h-12 mb-3 inline-block"
+                className="text-purple-600 w-12 h-12 mb-3 inline-block"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -35,7 +35,7 @@ const Track = () => {
           <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
             <div className="border-2 hover:shadow-xl hover:shadow-gray-200 border-gray-200 bg-gray-100 shadow-[inset_0_0_2px_rgba(0,0,0,0.6)] px-4 py-6 rounded-lg">
               <svg
-                className="text-pink-600 w-12 h-12 mb-3 inline-block"
+                className="text-purple-600 w-12 h-12 mb-3 inline-block"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -50,10 +50,10 @@ const Track = () => {
               </svg>
 
               <h2 className="title-font font-medium text-lg text-gray-900">
-                Premium Tshirts
+                Branded Phones
               </h2>
               <p className="leading-relaxed">
-                Our T-Shirts are 100% made of cotton.
+                Apple Samsung Sony Vivo...
               </p>
             </div>
           </div>
@@ -62,7 +62,7 @@ const Track = () => {
           <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
             <div className="border-2 hover:shadow-xl hover:shadow-gray-200 border-gray-200 bg-gray-100 shadow-[inset_0_0_2px_rgba(0,0,0,0.6)] px-4 py-6 rounded-lg">
               <svg
-                className="text-pink-600 w-12 h-12 mb-3 inline-block"
+                className="text-purple-600 w-12 h-12 mb-3 inline-block"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -77,10 +77,10 @@ const Track = () => {
               </svg>
 
               <h2 className="title-font font-medium text-lg text-gray-900">
-                Premium Tshirts
+                Premium Jackets
               </h2>
               <p className="leading-relaxed">
-                Our T-Shirts are 100% made of cotton.
+                Our Jackets are 100% made in India.
               </p>
             </div>
           </div>

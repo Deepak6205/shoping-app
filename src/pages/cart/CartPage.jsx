@@ -12,7 +12,7 @@ import { Timestamp, addDoc, collection } from "firebase/firestore";
 import { fireDB } from "../../firebase/FirebaseConfig";
 
 import { Navigate } from "react-router";
-import BuyNowModal from "../../components/buyNowModal/ByNowModal";
+import BuyNowModal from "../../components/buyNowModal/BuyNowModal";
 
 const CartPage = () => {
   const cartItems = useSelector((state) => state.cart);
@@ -63,7 +63,7 @@ const CartPage = () => {
   });
 
   const buyNowFunction = () => {
-   
+    
     if (
       addressInfo.name === "" ||
       addressInfo.address === "" ||
