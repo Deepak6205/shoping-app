@@ -71,11 +71,11 @@ const AddProductPage = () => {
       await addDoc(productRef, product);
       toast.success("Add product successfully");
       navigate("/admin-dashboard");
-      setLoading(false);
     } catch (error) {
       console.log(error);
-      setLoading(false);
       toast.error("Add product failed");
+    } finally{
+       setLoading(false);
     }
   };
   return (

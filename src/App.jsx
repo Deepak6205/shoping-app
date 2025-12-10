@@ -16,6 +16,7 @@ import { Toaster } from 'react-hot-toast'
 import { ProtectedRouteForAdmin } from './protectedRoute/ProtectedRouteForAdmin'
 import { ProtectedRouteForUser } from './protectedRoute/ProtectedRouteForUser'
 import CategoryPage from './pages/category/CategoryPage'
+import AllProduct from './pages/allproduct/AllProduct'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="/*" element={<NoPage/>} />
+          <Route path="/allproduct" element={<AllProduct/>} />
           <Route path="/productinfo/:id" element={<ProductInfo/>} />
           <Route path="/cart" element={<CartPage/>} />
           <Route path="/signup" element={<Signup/>} />
@@ -33,7 +35,7 @@ const App = () => {
           <Route path="/admin-dashboard" element={<AdminDashboard/>} />
           <Route path="/addproduct" element={<AddProductPage/>} />
           <Route path="/updateproduct" element={<UpdateProductPage/>} />
-          <Route path="/category/:categoryname" element={<CategoryPage />} />  {/* category Page route  */}
+          <Route path="/category/:categoryname" element={<CategoryPage />} />  
           <Route path="/user-dashboard" element={
             <ProtectedRouteForUser>
               <UserDashboard />
