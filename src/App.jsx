@@ -16,7 +16,7 @@ import { Toaster } from 'react-hot-toast'
 import { ProtectedRouteForAdmin } from './protectedRoute/ProtectedRouteForAdmin'
 import { ProtectedRouteForUser } from './protectedRoute/ProtectedRouteForUser'
 import CategoryPage from './pages/category/CategoryPage'
-import AllProduct from './pages/allproduct/AllProduct'
+import AllProduct from './pages/allProduct/AllProduct'
 
 const App = () => {
   return (
