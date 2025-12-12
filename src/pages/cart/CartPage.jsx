@@ -45,10 +45,8 @@ const CartPage = () => {
     localStorage.setItem("cart", JSON.stringify(cartItems));
   }, [cartItems]);
 
-  
   const user = JSON.parse(localStorage.getItem("users"));
 
-  
   const [addressInfo, setAddressInfo] = useState({
     name: "",
     address: "",
@@ -63,7 +61,6 @@ const CartPage = () => {
   });
 
   const buyNowFunction = () => {
-    
     if (
       addressInfo.name === "" ||
       addressInfo.address === "" ||
@@ -73,7 +70,6 @@ const CartPage = () => {
       return toast.error("All Fields are required");
     }
 
-    
     const orderInfo = {
       cartItems,
       addressInfo,
@@ -207,7 +203,7 @@ const CartPage = () => {
                 )}
               </ul>
             </section>
-            
+
             <section
               aria-labelledby="summary-heading"
               className="mt-16 rounded-md bg-white lg:col-span-4 lg:mt-0 lg:p-0"
@@ -245,14 +241,18 @@ const CartPage = () => {
                 </dl>
                 <div className="px-2 pb-4 font-medium text-green-700">
                   <div className="flex gap-4 mb-6">
-                    {user ? (
-                      <BuyNowModal
-                        addressInfo={addressInfo}
-                        setAddressInfo={setAddressInfo}
-                        buyNowFunction={buyNowFunction}
-                      />
+                    {cartItems.length !== 0 ? (
+                      user ? (
+                        <BuyNowModal
+                          addressInfo={addressInfo}
+                          setAddressInfo={setAddressInfo}
+                          buyNowFunction={buyNowFunction}
+                        />
+                      ) : (
+                        <Navigate to="/login" />
+                      )
                     ) : (
-                      <Navigate to={"/login"} />
+                      <p>Oops... your cart is empty please add</p>
                     )}
                   </div>
                 </div>
